@@ -11615,8 +11615,8 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Brands';
   font-style: normal;
   font-weight: normal;
-  src: url(./fonts/fa-brands-400.eot);
-  src: url(./fonts/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(./fonts/fa-brands-400.woff2) format("woff2"), url(./fonts/fa-brands-400.woff) format("woff"), url(./fonts/fa-brands-400.ttf) format("truetype"), url(./fonts/fa-brands-400.svg#fontawesome) format("svg"); }
+  src: url(../resources/fa-brands-400.eot);
+  src: url(../resources/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(../resources/fa-brands-400.woff2) format("woff2"), url(../resources/fa-brands-400.woff) format("woff"), url(../resources/fa-brands-400.ttf) format("truetype"), url(../resources/fa-brands-400.svg#fontawesome) format("svg"); }
 
 .fab {
   font-family: 'Font Awesome 5 Brands'; }
@@ -11625,8 +11625,8 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Pro';
   font-style: normal;
   font-weight: 300;
-  src: url(./fonts/fa-light-300.eot);
-  src: url(./fonts/fa-light-300.eot?#iefix) format("embedded-opentype"), url(./fonts/fa-light-300.woff2) format("woff2"), url(./fonts/fa-light-300.woff) format("woff"), url(./fonts/fa-light-300.ttf) format("truetype"), url(./fonts/fa-light-300.svg#fontawesome) format("svg"); }
+  src: url(../resources/fa-light-300.eot);
+  src: url(../resources/fa-light-300.eot?#iefix) format("embedded-opentype"), url(../resources/fa-light-300.woff2) format("woff2"), url(../resources/fa-light-300.woff) format("woff"), url(../resources/fa-light-300.ttf) format("truetype"), url(../resources/fa-light-300.svg#fontawesome) format("svg"); }
 
 .fal {
   font-family: 'Font Awesome 5 Pro';
@@ -11636,8 +11636,8 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Pro';
   font-style: normal;
   font-weight: 400;
-  src: url(./fonts/fa-regular-400.eot);
-  src: url(./fonts/fa-regular-400.eot?#iefix) format("embedded-opentype"), url(./fonts/fa-regular-400.woff2) format("woff2"), url(./fonts/fa-regular-400.woff) format("woff"), url(./fonts/fa-regular-400.ttf) format("truetype"), url(./fonts/fa-regular-400.svg#fontawesome) format("svg"); }
+  src: url(../resources/fa-regular-400.eot);
+  src: url(../resources/fa-regular-400.eot?#iefix) format("embedded-opentype"), url(../resources/fa-regular-400.woff2) format("woff2"), url(../resources/fa-regular-400.woff) format("woff"), url(../resources/fa-regular-400.ttf) format("truetype"), url(../resources/fa-regular-400.svg#fontawesome) format("svg"); }
 
 .far {
   font-family: 'Font Awesome 5 Pro';
@@ -11647,8 +11647,8 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Pro';
   font-style: normal;
   font-weight: 900;
-  src: url(./fonts/fa-solid-900.eot);
-  src: url(./fonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(./fonts/fa-solid-900.woff2) format("woff2"), url(./fonts/fa-solid-900.woff) format("woff"), url(./fonts/fa-solid-900.ttf) format("truetype"), url(./fonts/fa-solid-900.svg#fontawesome) format("svg"); }
+  src: url(../resources/fa-solid-900.eot);
+  src: url(../resources/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(../resources/fa-solid-900.woff2) format("woff2"), url(../resources/fa-solid-900.woff) format("woff"), url(../resources/fa-solid-900.ttf) format("truetype"), url(../resources/fa-solid-900.svg#fontawesome) format("svg"); }
 
 .fa,
 .fas {
@@ -11657,57 +11657,57 @@ readers do not read off random characters that represent icons */
 
 @font-face {
   font-family: 'Lato-Black';
-  src: url(./fonts/Lato-Black.eot);
-  src: url(./fonts/Lato-Black.eot?#iefix) format("embedded-opentype"), url(./fonts/Lato-Black.woff) format("woff"), url(./fonts/Lato-Black.ttf) format("truetype");
+  src: url(../resources/Lato-Black.eot);
+  src: url(../resources/Lato-Black.eot?#iefix) format("embedded-opentype"), url(../resources/Lato-Black.woff) format("woff"), url(../resources/Lato-Black.ttf) format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Lato-BlackItalic';
-  src: url(./fonts/Lato-BlackItalic.eot);
-  src: url(./fonts/Lato-BlackItalic.eot?#iefix) format("embedded-opentype"), url(./fonts/Lato-BlackItalic.woff) format("woff"), url(./fonts/Lato-BlackItalic.ttf) format("truetype");
+  src: url(../resources/Lato-BlackItalic.eot);
+  src: url(../resources/Lato-BlackItalic.eot?#iefix) format("embedded-opentype"), url(../resources/Lato-BlackItalic.woff) format("woff"), url(../resources/Lato-BlackItalic.ttf) format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Lato-Bold';
-  src: url(./fonts/Lato-Bold.eot);
-  src: url(./fonts/Lato-Bold.eot?#iefix) format("embedded-opentype"), url(./fonts/Lato-Bold.woff) format("woff"), url(./fonts/Lato-Bold.ttf) format("truetype");
+  src: url(../resources/Lato-Bold.eot);
+  src: url(../resources/Lato-Bold.eot?#iefix) format("embedded-opentype"), url(../resources/Lato-Bold.woff) format("woff"), url(../resources/Lato-Bold.ttf) format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Lato-BoldItalic';
-  src: url(./fonts/Lato-BoldItalic.eot);
-  src: url(./fonts/Lato-BoldItalic.eot?#iefix) format("embedded-opentype"), url(./fonts/Lato-BoldItalic.woff) format("woff"), url(./fonts/Lato-BoldItalic.ttf) format("truetype");
+  src: url(../resources/Lato-BoldItalic.eot);
+  src: url(../resources/Lato-BoldItalic.eot?#iefix) format("embedded-opentype"), url(../resources/Lato-BoldItalic.woff) format("woff"), url(../resources/Lato-BoldItalic.ttf) format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Lato-Italic';
-  src: url(./fonts/Lato-Italic.eot);
-  src: url(./fonts/Lato-Italic.eot?#iefix) format("embedded-opentype"), url(./fonts/Lato-Italic.woff) format("woff"), url(./fonts/Lato-Italic.ttf) format("truetype");
+  src: url(../resources/Lato-Italic.eot);
+  src: url(../resources/Lato-Italic.eot?#iefix) format("embedded-opentype"), url(../resources/Lato-Italic.woff) format("woff"), url(../resources/Lato-Italic.ttf) format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Lato-Light';
-  src: url(./fonts/Lato-Light.eot);
-  src: url(./fonts/Lato-Light.eot?#iefix) format("embedded-opentype"), url(./fonts/Lato-Light.woff) format("woff"), url(./fonts/Lato-Light.ttf) format("truetype");
+  src: url(../resources/Lato-Light.eot);
+  src: url(../resources/Lato-Light.eot?#iefix) format("embedded-opentype"), url(../resources/Lato-Light.woff) format("woff"), url(../resources/Lato-Light.ttf) format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Lato-LightItalic';
-  src: url(./fonts/Lato-LightItalic.eot);
-  src: url(./fonts/Lato-LightItalic.eot?#iefix) format("embedded-opentype"), url(./fonts/Lato-LightItalic.woff) format("woff"), url(./fonts/Lato-LightItalic.ttf) format("truetype");
+  src: url(../resources/Lato-LightItalic.eot);
+  src: url(../resources/Lato-LightItalic.eot?#iefix) format("embedded-opentype"), url(../resources/Lato-LightItalic.woff) format("woff"), url(../resources/Lato-LightItalic.ttf) format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Lato';
-  src: url(./fonts/Lato-Regular.eot);
-  src: url(./fonts/Lato-Regular.eot?#iefix) format("embedded-opentype"), url(./fonts/Lato-Regular.woff) format("woff"), url(./fonts/Lato-Regular.ttf) format("truetype");
+  src: url(../resources/Lato-Regular.eot);
+  src: url(../resources/Lato-Regular.eot?#iefix) format("embedded-opentype"), url(../resources/Lato-Regular.woff) format("woff"), url(../resources/Lato-Regular.ttf) format("truetype");
   font-weight: normal;
   font-style: normal; }
 
