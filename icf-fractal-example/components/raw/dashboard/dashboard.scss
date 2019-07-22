@@ -1,0 +1,194 @@
+$dashboard-transition: opacity 2s ease-in-out, filter 2s ease-in-out, color 2s ease-in-out;
+$gradiant-transition-length: 8s;
+
+@mixin gradiant-background($color1, $color2, $transition-time) {
+
+	background: linear-gradient(270deg, $color1, $color2);
+	background-size: 200% 200%;
+
+	-webkit-animation: AnimationName $transition-time ease infinite;
+	-moz-animation: AnimationName $transition-time ease infinite;
+	animation: AnimationName $transition-time ease infinite;
+
+	@-webkit-keyframes AnimationName {
+		0%{background-position:0% 50%}
+		50%{background-position:100% 50%}
+		100%{background-position:0% 50%}
+	}
+	@-moz-keyframes AnimationName {
+		0%{background-position:0% 50%}
+		50%{background-position:100% 50%}
+		100%{background-position:0% 50%}
+	}
+	@keyframes AnimationName {
+		0%{background-position:0% 50%}
+		50%{background-position:100% 50%}
+		100%{background-position:0% 50%}
+	}
+	
+}
+
+@mixin font-color-mixer($color1, $color2, $color3){
+
+	.icf-dashboard__time {
+		color: $color3;
+	}
+
+	.icf-dashboard__weather {
+		color: $color3;
+	}
+
+
+
+}
+
+.icf-dashboard {
+	transition: $dashboard-transition;
+	position: relative;
+	color: $white;
+	z-index: 1;
+
+	&:before {
+		transition: $dashboard-transition;
+
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		content: '';
+		background-color: $white;
+		opacity: 0;
+
+	}
+
+	&__content {
+		z-index: 2;
+	}
+
+	&--black {
+
+		.icf-dashboard__logo {
+			filter: brightness(0);
+		}
+
+		&:before {
+			opacity: 1;
+		}
+
+		.icf-dashboard__information-row {
+			color: $darkblue;
+		}
+
+	}
+
+	&__logo {
+		transition: $dashboard-transition;
+
+		svg {
+			width: 1000px;
+			height: 186px;
+		}
+
+	}
+
+	&__information-row {
+		//transition: $dashboard-transition;
+		color: $white;
+		font-size: 100px;
+		margin-top: $spacing--xl;
+
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		align-items: baseline;
+
+
+	}
+
+	&__time {
+		margin-right: $spacing--xxl;
+	}
+
+	&__time, &__weather {
+		transition: $dashboard-transition;
+	}
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 100vw;
+	height: 100vh;
+
+	&--bg-1 {
+		@include gradiant-background($magenta, $orange, $gradiant-transition-length);
+	}
+
+	&--bg-2 {
+		@include gradiant-background($green, $darkblue, $gradiant-transition-length);
+	}
+
+	&--bg-3 {
+		@include gradiant-background($orange, $yellow, $gradiant-transition-length);
+	}
+
+	&--bg-4 {
+		@include gradiant-background($magenta, $darkblue, $gradiant-transition-length);
+	}
+
+	&--bg-5 {
+		@include gradiant-background($yellow, $green, $gradiant-transition-length);
+	}
+
+	&--bg-6 {
+		@include gradiant-background($blue, $darkblue, $gradiant-transition-length);
+	}
+
+	&--bg-7 {
+		@include gradiant-background($magenta, $yellow, $gradiant-transition-length);
+	}
+
+	&--bg-8 {
+		@include gradiant-background($blue, $green, $gradiant-transition-length);
+	}
+
+	&--bg-9 {
+		@include gradiant-background($magenta, $blue, $gradiant-transition-length);
+	}
+
+	&--font-color-1 {
+		@include font-color-mixer($magenta, $orange, $gray);
+	}
+
+	&--font-color-2 {
+		@include font-color-mixer($orange, $green, $gray);
+	}
+
+	&--font-color-3 {
+		@include font-color-mixer($green, $blue, $gray);
+	}
+
+	&--font-color-4 {
+		@include font-color-mixer($blue, $darkblue, $gray);
+	}
+
+	&--font-color-5 {
+		@include font-color-mixer($darkblue, $magenta, $gray);
+	}
+
+	&--font-color-6 {
+		@include font-color-mixer($orange, $yellow, $gray);
+	}
+
+	&--font-color-7 {
+		@include font-color-mixer($green, $darkblue, $gray);
+	}
+
+	&--font-color-8 {
+		@include font-color-mixer($magenta, $darkblue, $gray);
+	}
+
+	&--font-color-9 {
+		@include font-color-mixer($yellow, $green, $gray);
+	}
+
+}

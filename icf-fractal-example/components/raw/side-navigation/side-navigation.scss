@@ -1,0 +1,32 @@
+.side-navigation {
+	margin-bottom: $spacing--base;
+
+	@include breakAt(desktop){
+		margin-bottom: $spacing--lg;
+	}
+
+	a {
+		color: $darkblue;
+
+		&:hover {
+			color: $blue;
+			text-decoration: none;
+		}
+	}
+
+	ul {
+		list-style-type: none;
+		padding: 0;
+
+		li {
+			padding-bottom: $spacing--sm;
+			margin-bottom: $spacing--sm;
+			border-bottom: 1px solid #999;
+
+			&:last-of-type {
+				border-bottom: none;
+				margin-bottom: 0;
+			}
+		}
+	}
+}
