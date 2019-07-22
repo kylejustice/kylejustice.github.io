@@ -12095,6 +12095,13 @@ img {
   .icf-dashboard--font-color-9 .icf-dashboard__weather {
     color: #999999; }
 
+.background-img-test {
+  width: 400px;
+  height: 400px;
+  background-image: url("/images/author-card-profile-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center; }
+
 button {
   color: inherit; }
 
