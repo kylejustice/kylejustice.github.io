@@ -12098,7 +12098,7 @@ img {
 .background-img-test {
   width: 400px;
   height: 400px;
-  background-image: url("/images/author-card-profile-1.jpg");
+  background-image: url(../resources/author-card-profile-1.jpg);
   background-repeat: no-repeat;
   background-position: center center; }
 
