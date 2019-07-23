@@ -11767,6 +11767,167 @@ img {
   .container {
     max-width: 1540px; } }
 
+.background-img-test {
+  width: 400px;
+  height: 400px;
+  background-image: url(../resources/ICFNext_Pattern_Arrows_RGB_21_Small.png);
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+button {
+  color: inherit; }
+
+.button, .btn {
+  font-family: "Lato-Bold", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  text-transform: uppercase;
+  outline: none;
+  border-style: none;
+  cursor: pointer;
+  padding: 0.5rem 2rem; }
+  .button__icon, .btn__icon {
+    margin-right: 0.25rem; }
+  .button--small, .btn--small {
+    font-family: "Lato-Black", sans-serif;
+    font-weight: 900;
+    font-size: 0.75rem;
+    padding: 0.5rem; }
+  .button-primary, .btn-primary {
+    color: #ffffff;
+    background-color: #ed0677;
+    border: 2px solid #ed0677; }
+    .button-primary:hover, .btn-primary:hover {
+      background-color: #ffffff; }
+    .button-primary:hover, .btn-primary:hover {
+      color: #ed0677; }
+    .button-primary--magenta, .btn-primary--magenta {
+      background-color: #ed0677;
+      border: 2px solid #ed0677; }
+      .button-primary--magenta:hover, .btn-primary--magenta:hover {
+        color: #ed0677; }
+    .button-primary--orange, .btn-primary--orange {
+      background-color: #f58220;
+      border: 2px solid #f58220; }
+      .button-primary--orange:hover, .btn-primary--orange:hover {
+        color: #f58220; }
+    .button-primary--yellow, .btn-primary--yellow {
+      background-color: #ffdd00;
+      border: 2px solid #ffdd00; }
+      .button-primary--yellow:hover, .btn-primary--yellow:hover {
+        color: #ffdd00; }
+    .button-primary--green, .btn-primary--green {
+      background-color: #bfd730;
+      border: 2px solid #bfd730; }
+      .button-primary--green:hover, .btn-primary--green:hover {
+        color: #bfd730; }
+    .button-primary--blue, .btn-primary--blue {
+      background-color: #5bcbf5;
+      border: 2px solid #5bcbf5; }
+      .button-primary--blue:hover, .btn-primary--blue:hover {
+        color: #5bcbf5; }
+    .button-primary--darkblue, .btn-primary--darkblue {
+      background-color: #004185;
+      border: 2px solid #004185; }
+      .button-primary--darkblue:hover, .btn-primary--darkblue:hover {
+        color: #004185; }
+    .button-primary--gradiant, .btn-primary--gradiant {
+      background: -webkit-gradient(linear, right top, left top, from(#ed0677), to(#004185));
+      background: -webkit-linear-gradient(right, #ed0677, #004185);
+      background: -o-linear-gradient(right, #ed0677, #004185);
+      background: linear-gradient(270deg, #ed0677, #004185);
+      background-size: 200% 200%;
+      -webkit-animation: AnimationName 8s ease infinite;
+      animation: AnimationName 8s ease infinite; }
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+  .button-secondary, .btn-secondary {
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    background-color: #bfd730; }
+    .button-secondary:hover, .btn-secondary:hover {
+      background-color: #ffffff; }
+    .button-secondary:hover, .btn-secondary:hover {
+      color: #bfd730; }
+    .button-secondary--magenta, .btn-secondary--magenta {
+      background-color: #ed0677; }
+      .button-secondary--magenta:hover, .btn-secondary--magenta:hover {
+        color: #ed0677; }
+    .button-secondary--orange, .btn-secondary--orange {
+      background-color: #f58220; }
+      .button-secondary--orange:hover, .btn-secondary--orange:hover {
+        color: #f58220; }
+    .button-secondary--green, .btn-secondary--green {
+      background-color: #bfd730; }
+      .button-secondary--green:hover, .btn-secondary--green:hover {
+        color: #bfd730; }
+    .button-secondary--blue, .btn-secondary--blue {
+      background-color: #5bcbf5; }
+      .button-secondary--blue:hover, .btn-secondary--blue:hover {
+        color: #5bcbf5; }
+    .button-secondary--darkblue, .btn-secondary--darkblue {
+      background-color: #004185; }
+      .button-secondary--darkblue:hover, .btn-secondary--darkblue:hover {
+        color: #004185; }
+  .button-tertiary, .button-default, .btn-tertiary, .btn-default {
+    background-color: transparent;
+    color: #5bcbf5;
+    border: 2px solid #5bcbf5; }
+    .button-tertiary:hover, .button-default:hover, .btn-tertiary:hover, .btn-default:hover {
+      color: #ffffff; }
+    .button-tertiary:hover, .button-default:hover, .btn-tertiary:hover, .btn-default:hover {
+      background-color: #5bcbf5; }
+    .button-tertiary--magenta, .button-default--magenta, .btn-tertiary--magenta, .btn-default--magenta {
+      color: #ed0677;
+      border: 2px solid #ed0677; }
+      .button-tertiary--magenta:hover, .button-default--magenta:hover, .btn-tertiary--magenta:hover, .btn-default--magenta:hover {
+        background-color: #ed0677; }
+    .button-tertiary--orange, .button-default--orange, .btn-tertiary--orange, .btn-default--orange {
+      color: #f58220;
+      border: 2px solid #f58220; }
+      .button-tertiary--orange:hover, .button-default--orange:hover, .btn-tertiary--orange:hover, .btn-default--orange:hover {
+        background-color: #f58220; }
+    .button-tertiary--yellow, .button-default--yellow, .btn-tertiary--yellow, .btn-default--yellow {
+      color: #ffdd00;
+      border: 2px solid #ffdd00; }
+      .button-tertiary--yellow:hover, .button-default--yellow:hover, .btn-tertiary--yellow:hover, .btn-default--yellow:hover {
+        background-color: #ffdd00; }
+    .button-tertiary--green, .button-default--green, .btn-tertiary--green, .btn-default--green {
+      color: #bfd730;
+      border: 2px solid #bfd730; }
+      .button-tertiary--green:hover, .button-default--green:hover, .btn-tertiary--green:hover, .btn-default--green:hover {
+        background-color: #bfd730; }
+    .button-tertiary--blue, .button-default--blue, .btn-tertiary--blue, .btn-default--blue {
+      color: #5bcbf5;
+      border: 2px solid #5bcbf5; }
+      .button-tertiary--blue:hover, .button-default--blue:hover, .btn-tertiary--blue:hover, .btn-default--blue:hover {
+        background-color: #5bcbf5; }
+
+a.button {
+  display: inline-block; }
+  a.button:hover {
+    text-decoration: none; }
+
 .icf-dashboard {
   -webkit-transition: opacity 2s ease-in-out, color 2s ease-in-out, -webkit-filter 2s ease-in-out;
   transition: opacity 2s ease-in-out, color 2s ease-in-out, -webkit-filter 2s ease-in-out;
@@ -11815,11 +11976,11 @@ img {
     transition: opacity 2s ease-in-out, filter 2s ease-in-out, color 2s ease-in-out;
     transition: opacity 2s ease-in-out, filter 2s ease-in-out, color 2s ease-in-out, -webkit-filter 2s ease-in-out; }
     .icf-dashboard__logo svg {
-      width: 1000px;
-      height: 186px; }
+      width: 500px;
+      height: 93px; }
   .icf-dashboard__information-row {
     color: #ffffff;
-    font-size: 100px;
+    font-size: 32px;
     margin-top: 4rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -11835,7 +11996,7 @@ img {
         -ms-flex-align: baseline;
             align-items: baseline; }
   .icf-dashboard__time {
-    margin-right: 8rem; }
+    margin-right: 2rem; }
   .icf-dashboard__time, .icf-dashboard__weather {
     -webkit-transition: opacity 2s ease-in-out, color 2s ease-in-out, -webkit-filter 2s ease-in-out;
     transition: opacity 2s ease-in-out, color 2s ease-in-out, -webkit-filter 2s ease-in-out;
@@ -12094,167 +12255,6 @@ img {
     color: #999999; }
   .icf-dashboard--font-color-9 .icf-dashboard__weather {
     color: #999999; }
-
-.background-img-test {
-  width: 400px;
-  height: 400px;
-  background-image: url(../resources/author-card-profile-1.jpg);
-  background-repeat: no-repeat;
-  background-position: center center; }
-
-button {
-  color: inherit; }
-
-.button, .btn {
-  font-family: "Lato-Bold", sans-serif;
-  font-weight: 700;
-  font-size: 1rem;
-  -webkit-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  -webkit-transition-property: all;
-  -o-transition-property: all;
-  transition-property: all;
-  text-transform: uppercase;
-  outline: none;
-  border-style: none;
-  cursor: pointer;
-  padding: 0.5rem 2rem; }
-  .button__icon, .btn__icon {
-    margin-right: 0.25rem; }
-  .button--small, .btn--small {
-    font-family: "Lato-Black", sans-serif;
-    font-weight: 900;
-    font-size: 0.75rem;
-    padding: 0.5rem; }
-  .button-primary, .btn-primary {
-    color: #ffffff;
-    background-color: #ed0677;
-    border: 2px solid #ed0677; }
-    .button-primary:hover, .btn-primary:hover {
-      background-color: #ffffff; }
-    .button-primary:hover, .btn-primary:hover {
-      color: #ed0677; }
-    .button-primary--magenta, .btn-primary--magenta {
-      background-color: #ed0677;
-      border: 2px solid #ed0677; }
-      .button-primary--magenta:hover, .btn-primary--magenta:hover {
-        color: #ed0677; }
-    .button-primary--orange, .btn-primary--orange {
-      background-color: #f58220;
-      border: 2px solid #f58220; }
-      .button-primary--orange:hover, .btn-primary--orange:hover {
-        color: #f58220; }
-    .button-primary--yellow, .btn-primary--yellow {
-      background-color: #ffdd00;
-      border: 2px solid #ffdd00; }
-      .button-primary--yellow:hover, .btn-primary--yellow:hover {
-        color: #ffdd00; }
-    .button-primary--green, .btn-primary--green {
-      background-color: #bfd730;
-      border: 2px solid #bfd730; }
-      .button-primary--green:hover, .btn-primary--green:hover {
-        color: #bfd730; }
-    .button-primary--blue, .btn-primary--blue {
-      background-color: #5bcbf5;
-      border: 2px solid #5bcbf5; }
-      .button-primary--blue:hover, .btn-primary--blue:hover {
-        color: #5bcbf5; }
-    .button-primary--darkblue, .btn-primary--darkblue {
-      background-color: #004185;
-      border: 2px solid #004185; }
-      .button-primary--darkblue:hover, .btn-primary--darkblue:hover {
-        color: #004185; }
-    .button-primary--gradiant, .btn-primary--gradiant {
-      background: -webkit-gradient(linear, right top, left top, from(#ed0677), to(#004185));
-      background: -webkit-linear-gradient(right, #ed0677, #004185);
-      background: -o-linear-gradient(right, #ed0677, #004185);
-      background: linear-gradient(270deg, #ed0677, #004185);
-      background-size: 200% 200%;
-      -webkit-animation: AnimationName 8s ease infinite;
-      animation: AnimationName 8s ease infinite; }
-
-@-webkit-keyframes AnimationName {
-  0% {
-    background-position: 0% 50%; }
-  50% {
-    background-position: 100% 50%; }
-  100% {
-    background-position: 0% 50%; } }
-
-@keyframes AnimationName {
-  0% {
-    background-position: 0% 50%; }
-  50% {
-    background-position: 100% 50%; }
-  100% {
-    background-position: 0% 50%; } }
-  .button-secondary, .btn-secondary {
-    color: #ffffff;
-    border: 2px solid #ffffff;
-    background-color: #bfd730; }
-    .button-secondary:hover, .btn-secondary:hover {
-      background-color: #ffffff; }
-    .button-secondary:hover, .btn-secondary:hover {
-      color: #bfd730; }
-    .button-secondary--magenta, .btn-secondary--magenta {
-      background-color: #ed0677; }
-      .button-secondary--magenta:hover, .btn-secondary--magenta:hover {
-        color: #ed0677; }
-    .button-secondary--orange, .btn-secondary--orange {
-      background-color: #f58220; }
-      .button-secondary--orange:hover, .btn-secondary--orange:hover {
-        color: #f58220; }
-    .button-secondary--green, .btn-secondary--green {
-      background-color: #bfd730; }
-      .button-secondary--green:hover, .btn-secondary--green:hover {
-        color: #bfd730; }
-    .button-secondary--blue, .btn-secondary--blue {
-      background-color: #5bcbf5; }
-      .button-secondary--blue:hover, .btn-secondary--blue:hover {
-        color: #5bcbf5; }
-    .button-secondary--darkblue, .btn-secondary--darkblue {
-      background-color: #004185; }
-      .button-secondary--darkblue:hover, .btn-secondary--darkblue:hover {
-        color: #004185; }
-  .button-tertiary, .button-default, .btn-tertiary, .btn-default {
-    background-color: transparent;
-    color: #5bcbf5;
-    border: 2px solid #5bcbf5; }
-    .button-tertiary:hover, .button-default:hover, .btn-tertiary:hover, .btn-default:hover {
-      color: #ffffff; }
-    .button-tertiary:hover, .button-default:hover, .btn-tertiary:hover, .btn-default:hover {
-      background-color: #5bcbf5; }
-    .button-tertiary--magenta, .button-default--magenta, .btn-tertiary--magenta, .btn-default--magenta {
-      color: #ed0677;
-      border: 2px solid #ed0677; }
-      .button-tertiary--magenta:hover, .button-default--magenta:hover, .btn-tertiary--magenta:hover, .btn-default--magenta:hover {
-        background-color: #ed0677; }
-    .button-tertiary--orange, .button-default--orange, .btn-tertiary--orange, .btn-default--orange {
-      color: #f58220;
-      border: 2px solid #f58220; }
-      .button-tertiary--orange:hover, .button-default--orange:hover, .btn-tertiary--orange:hover, .btn-default--orange:hover {
-        background-color: #f58220; }
-    .button-tertiary--yellow, .button-default--yellow, .btn-tertiary--yellow, .btn-default--yellow {
-      color: #ffdd00;
-      border: 2px solid #ffdd00; }
-      .button-tertiary--yellow:hover, .button-default--yellow:hover, .btn-tertiary--yellow:hover, .btn-default--yellow:hover {
-        background-color: #ffdd00; }
-    .button-tertiary--green, .button-default--green, .btn-tertiary--green, .btn-default--green {
-      color: #bfd730;
-      border: 2px solid #bfd730; }
-      .button-tertiary--green:hover, .button-default--green:hover, .btn-tertiary--green:hover, .btn-default--green:hover {
-        background-color: #bfd730; }
-    .button-tertiary--blue, .button-default--blue, .btn-tertiary--blue, .btn-default--blue {
-      color: #5bcbf5;
-      border: 2px solid #5bcbf5; }
-      .button-tertiary--blue:hover, .button-default--blue:hover, .btn-tertiary--blue:hover, .btn-default--blue:hover {
-        background-color: #5bcbf5; }
-
-a.button {
-  display: inline-block; }
-  a.button:hover {
-    text-decoration: none; }
 
 .nav-heading {
   position: relative;

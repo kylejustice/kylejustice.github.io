@@ -3814,19 +3814,7 @@ eval("\n\nvar _jquery = __webpack_require__(/*! jquery */ \"./node_modules/jquer
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _dashboard = __webpack_require__(/*! ../patterns/01-elements/_dashboard/dashboard.js */ \"./src/patterns/01-elements/_dashboard/dashboard.js\");\n\nObject.keys(_dashboard).forEach(function (key) {\n  if (key === \"default\" || key === \"__esModule\") return;\n  Object.defineProperty(exports, key, {\n    enumerable: true,\n    get: function get() {\n      return _dashboard[key];\n    }\n  });\n});\n\nvar _buttons = __webpack_require__(/*! ../patterns/01-elements/buttons/buttons.js */ \"./src/patterns/01-elements/buttons/buttons.js\");\n\nObject.keys(_buttons).forEach(function (key) {\n  if (key === \"default\" || key === \"__esModule\") return;\n  Object.defineProperty(exports, key, {\n    enumerable: true,\n    get: function get() {\n      return _buttons[key];\n    }\n  });\n});\n\n//# sourceURL=webpack:///./src/js/patterns.js?");
-
-/***/ }),
-
-/***/ "./src/patterns/01-elements/_dashboard/dashboard.js":
-/*!**********************************************************!*\
-  !*** ./src/patterns/01-elements/_dashboard/dashboard.js ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n\tvalue: true\n});\nexports.dashboard = dashboard;\nfunction dashboard() {\n\n\t$(document).ready(function () {\n\n\t\tvar DASHBOARD_TRANSITION_LENGTH = 2000;\n\n\t\tvar iteration = 1;\n\t\tvar iterationMax = 6;\n\n\t\tsetInterval(function () {\n\n\t\t\tif ($(\".icf-dashboard\").hasClass(\"icf-dashboard--black\")) {\n\t\t\t\t$(\".icf-dashboard\").removeClass(\"icf-dashboard--black\");\n\t\t\t\t// let fontToRemove;\n\t\t\t\t// if(1 < iteration){\n\t\t\t\t// \tfontToRemove = iteration-1;\n\t\t\t\t// }else{\n\t\t\t\t// \tfontToRemove = iterationMax;\n\t\t\t\t// }\n\t\t\t\tvar fontToRemove = iteration - 1;\n\t\t\t\t$(\".icf-dashboard\").removeClass(\"icf-dashboard--font-color-\" + (fontToRemove > 0 ? fontToRemove : iterationMax));\n\t\t\t} else {\n\t\t\t\t$(\".icf-dashboard\").addClass(\"icf-dashboard--black\");\n\t\t\t\t$(\".icf-dashboard\").addClass(\"icf-dashboard--font-color-\" + iteration);\n\n\t\t\t\t// Switch the BG while the white BG is up\n\t\t\t\tsetTimeout(function () {\n\t\t\t\t\t$(\".icf-dashboard\").removeClass(\"icf-dashboard--bg-\" + iteration);\n\t\t\t\t\titeration++;\n\t\t\t\t\tif (iteration > iterationMax) {\n\t\t\t\t\t\titeration = 1;\n\t\t\t\t\t}\n\t\t\t\t\t$(\".icf-dashboard\").addClass(\"icf-dashboard--bg-\" + iteration);\n\t\t\t\t}, DASHBOARD_TRANSITION_LENGTH);\n\t\t\t}\n\t\t}, 6000);\n\t});\n}\n\n//# sourceURL=webpack:///./src/patterns/01-elements/_dashboard/dashboard.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _buttons = __webpack_require__(/*! ../patterns/01-elements/buttons/buttons.js */ \"./src/patterns/01-elements/buttons/buttons.js\");\n\nObject.keys(_buttons).forEach(function (key) {\n  if (key === \"default\" || key === \"__esModule\") return;\n  Object.defineProperty(exports, key, {\n    enumerable: true,\n    get: function get() {\n      return _buttons[key];\n    }\n  });\n});\n\nvar _dashboard = __webpack_require__(/*! ../patterns/01-elements/dashboard/dashboard.js */ \"./src/patterns/01-elements/dashboard/dashboard.js\");\n\nObject.keys(_dashboard).forEach(function (key) {\n  if (key === \"default\" || key === \"__esModule\") return;\n  Object.defineProperty(exports, key, {\n    enumerable: true,\n    get: function get() {\n      return _dashboard[key];\n    }\n  });\n});\n\n//# sourceURL=webpack:///./src/js/patterns.js?");
 
 /***/ }),
 
@@ -3839,6 +3827,18 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n\tvalue: true\n});\n
 
 "use strict";
 eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n\tvalue: true\n});\nexports.buttons = buttons;\nfunction buttons() {\n\n\t$(document).ready(function () {\n\n\t\t$(\".button-primary\").on(\"click\", function () {\n\t\t\t$(this).addClass(\"button-primary--gradiant\");\n\t\t});\n\t});\n}\n\n//# sourceURL=webpack:///./src/patterns/01-elements/buttons/buttons.js?");
+
+/***/ }),
+
+/***/ "./src/patterns/01-elements/dashboard/dashboard.js":
+/*!*********************************************************!*\
+  !*** ./src/patterns/01-elements/dashboard/dashboard.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n\tvalue: true\n});\nexports.dashboard = dashboard;\nfunction dashboard() {\n\n\t$(document).ready(function () {\n\n\t\tvar DASHBOARD_TRANSITION_LENGTH = 2000;\n\n\t\tvar iteration = 1;\n\t\tvar iterationMax = 6;\n\n\t\tsetInterval(function () {\n\n\t\t\tif ($(\".icf-dashboard\").hasClass(\"icf-dashboard--black\")) {\n\t\t\t\t$(\".icf-dashboard\").removeClass(\"icf-dashboard--black\");\n\t\t\t\t// let fontToRemove;\n\t\t\t\t// if(1 < iteration){\n\t\t\t\t// \tfontToRemove = iteration-1;\n\t\t\t\t// }else{\n\t\t\t\t// \tfontToRemove = iterationMax;\n\t\t\t\t// }\n\t\t\t\tvar fontToRemove = iteration - 1;\n\t\t\t\t$(\".icf-dashboard\").removeClass(\"icf-dashboard--font-color-\" + (fontToRemove > 0 ? fontToRemove : iterationMax));\n\t\t\t} else {\n\t\t\t\t$(\".icf-dashboard\").addClass(\"icf-dashboard--black\");\n\t\t\t\t$(\".icf-dashboard\").addClass(\"icf-dashboard--font-color-\" + iteration);\n\n\t\t\t\t// Switch the BG while the white BG is up\n\t\t\t\tsetTimeout(function () {\n\t\t\t\t\t$(\".icf-dashboard\").removeClass(\"icf-dashboard--bg-\" + iteration);\n\t\t\t\t\titeration++;\n\t\t\t\t\tif (iteration > iterationMax) {\n\t\t\t\t\t\titeration = 1;\n\t\t\t\t\t}\n\t\t\t\t\t$(\".icf-dashboard\").addClass(\"icf-dashboard--bg-\" + iteration);\n\t\t\t\t}, DASHBOARD_TRANSITION_LENGTH);\n\t\t\t}\n\t\t}, 6000);\n\t});\n}\n\n//# sourceURL=webpack:///./src/patterns/01-elements/dashboard/dashboard.js?");
 
 /***/ }),
 

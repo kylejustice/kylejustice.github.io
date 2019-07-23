@@ -84,8 +84,8 @@ $gradiant-transition-length: 8s;
 		transition: $dashboard-transition;
 
 		svg {
-			width: 1000px;
-			height: 186px;
+			width: 500px;
+			height: 93px;
 		}
 
 	}
@@ -93,7 +93,7 @@ $gradiant-transition-length: 8s;
 	&__information-row {
 		//transition: $dashboard-transition;
 		color: $white;
-		font-size: 100px;
+		font-size: 32px;
 		margin-top: $spacing--xl;
 
 		display: flex;
@@ -105,7 +105,7 @@ $gradiant-transition-length: 8s;
 	}
 
 	&__time {
-		margin-right: $spacing--xxl;
+		margin-right: $spacing--lg;
 	}
 
 	&__time, &__weather {
