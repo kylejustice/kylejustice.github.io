@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Kyle Justice - Bus-Fly-Go</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- Icon stylesheet -->
+    <!-- Font Awesome (http://fontawesome.io) -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Stateface (https://propublica.github.io/stateface) -->
+    <link rel="stylesheet" href="css/stateface.css">
+
+    <!-- Bootstrap stylesheet -->
+    <link rel="stylesheet" href="css/bootstrap-2.css">
+    <link rel="stylesheet" href="css/bootstrap-theme-2.css">
+
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- jQuery -->
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Font used for the website: Adobe Europa -->
+    <script src="https://use.typekit.net/mrf6non.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <!-- Syntax highlighter stylesheet -->
+    <!-- Rouge (http://rouge.jneen.net) -->
+    <link href="/css/rouge.css" rel="stylesheet" />
+
+  </head>
+
+  <body data-spy="scroll" data-target="#navbar-scroll">
+
+  <style type="text/css">
+    body {
+        padding-top: 60px;
+    }
+</style>
+
+<nav class="navbar navbar-default navbar-fixed-top change-color">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/index.html">Kyle Justice</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <div id="navbar-scroll">
+        <ul class="nav navbar-nav">
+          <li class=""><a href="#"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i> Top</a></li>
+        </ul>
+      </div>
+      <ul class="nav navbar-nav navbar-right nav-glyph">
+        <li><a href="https://www.linkedin.com/in/kyle-justice-67894024" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.github.com/timeout19" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+        <li><a href="http://www.facebook.com/kjustice" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="projects">
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="projects-header"><em>Bus-Fly-Go</em></h1>
+    </div>
+  </div>
+</div>
+
+<div class="container projects-div">
+
+  <div class="row">
+    <div class="col-md-6">
+      <a href="/images/screen-busflygo.png"><img src="/images/screen-busflygo.png" class="img-responsive" alt="Responsive image"></a>
+    </div>
+    <div class="col-md-6">
+      <a href="/images/screen-busflygo-results.png"><img src="/images/screen-busflygo-results.png" class="img-responsive" alt="Responsive image"></a>
+    </div>
+  </div>
+
+  <hr class="hr-small">
+
+  <h3 class="project-h3">ShowOHI/O</h3>
+
+  <p>
+    Bus-Fly-Go was recently presented at <a href="http://hack.osu.edu/show/2017/" target="_blank">ShowOHI/O</a> 2017! <a href="/download/BusFlyGo.ShowOHIO.pdf" target="_blank">This document</a> was used at the show and provides a great overview of the project.
+  </p>
+
+  <hr class="hr-small">
+
+  <h3 class="project-h3">What is Bus-Fly-Go?</h3>
+
+  <p>Bus-Fly-Go is an extreme budget travel application, implemented using Rails. It pairs up bus tickets from middle-sized cities, with cheaper flights originating from large, alternative airports.
+    <br><br>
+    <b>Example:</b> Consider a user's request to travel round-trip from Columbus, Ohio to Mumbai, India. Bus-Fly-Go first searches for direct flights between Columbus and Mumbai.
+    On average, this ticket will cost around $1,000-$1,200. Pretty expensive eh? No worries though, as Bus-Fly-Go already started searching for bus tickets from Columbus, to the larger, cheaper airports!
+    <br><br>
+    The application finds bus tickets from Columbus to alternative cities like New York, Chicago, Washington D.C. and Baltimore.
+    It then pairs the bus tickets with optimally matching flights from the given alternate city, to the end destination, Mumbai.
+    Therefore, if a flight from Chicago to Mumbai is found for $800, and bus tickets are available from Columbus to Chicago for under $50 a piece, it can potentially save $100-$300.
+  </p>
+
+  <hr class="hr-small">
+
+  <h3>Technical Specifications</h3>
+
+  <p><strong>Languages: </strong>CSS, HTML, JavaScript, Ruby, SQL
+    <br>
+    <strong>Technologies: </strong>Bootstrap, Firebase, jQuery, PhantomJS, Rails, React, Redis, RubyMine, Sidekiq, SQLite
+  </p>
+
+  <hr class="hr-small">
+
+  <h3 class="project-h3">Technical Highlights</h3>
+
+  <p>
+    Ruby on Rails is used as the base framework for Bus-Fly-Go.
+    Firebase, a JSON based cloud data structure, is used to store results, because of its accessibility to the client.
+    Client-side ReactJS pulls results down from Firebase and presents the appropriate view to the end user.
+
+    <br><br>
+
+    Ticket data is scraped using PhantomJS, which unfortunately, is the slowest running function of the application.
+    Sidekiq, a background processing utility for Ruby, is used to gather and push ticket data to Firebase for each alternate city.
+    Thus, a Sidekiq worker is created for each alternate city, in an effort to speed up the web scraping process.
+
+    <br><br>
+
+    <b>Code Example: </b>When a user requests to see bus and flight ticket data, the controller in Rails quickly sends a temporary loading web page to the user, after launching the initial Sidekiq background worker.
+
+    <br><br>
+
+<pre class="highlight ruby"><code>  <span class="c1"># app/controllers/trips_controller.rb</span>
+  <span class="p">[.</span><span class="nf">.</span><span class="o">.</span><span class="p">]</span>
+
+  <span class="k">if</span> <span class="vi">@trip</span><span class="p">.</span><span class="nf">save</span>
+
+  <span class="c1"># Launch initial Sidekiq worker</span>
+  <span class="no">TripWorker</span><span class="p">.</span><span class="nf">perform_async</span><span class="p">(</span><span class="vi">@trip</span><span class="p">.</span><span class="nf">token</span><span class="p">,</span> <span class="vi">@trip</span><span class="p">.</span><span class="nf">from</span><span class="p">,</span> <span class="vi">@trip</span><span class="p">.</span><span class="nf">to</span><span class="p">,</span> <span class="vi">@trip</span><span class="p">.</span><span class="nf">dep_date</span><span class="p">,</span> <span class="vi">@trip</span><span class="p">.</span><span class="nf">arv_date</span><span class="p">)</span>
+
+  <span class="c1"># Send asynchronous loading page to the user</span>
+  <span class="nb">format</span><span class="p">.</span><span class="nf">html</span> <span class="p">{</span> <span class="n">redirect_to</span> <span class="vi">@trip</span><span class="p">,</span> <span class="ss">notice: </span><span class="s1">'Trip is being loaded.'</span> <span class="p">}</span>
+  <span class="nb">format</span><span class="p">.</span><span class="nf">json</span> <span class="p">{</span> <span class="n">render</span> <span class="ss">:show</span><span class="p">,</span> <span class="ss">status: :created</span><span class="p">,</span> <span class="ss">location: </span><span class="vi">@trip</span> <span class="p">}</span>
+
+  <span class="k">else</span>
+  <span class="p">[.</span><span class="nf">.</span><span class="o">.</span><span class="p">]</span>
+</code></pre>
+    <br>
+  <p>Multiple Sidekiq workers are then dispatched by the backend. Each worker gathers and pushes bus and flight ticket data to the user, which is therefore loaded in asynchronously.
+  </p>
+
+  <br>
+
+<pre class="highlight ruby"><code>  <span class="c1"># app/helpers/trips_helper.rb</span>
+  <span class="p">[.</span><span class="nf">.</span><span class="o">.</span><span class="p">]</span>
+
+  <span class="c1"># Method being performed in the background by Sidekiq</span>
+  <span class="k">def</span> <span class="nf">perform</span><span class="p">(</span><span class="n">token</span><span class="p">,</span> <span class="n">from</span><span class="p">,</span> <span class="n">to</span><span class="p">,</span> <span class="n">dep_date</span><span class="p">,</span> <span class="n">ret_date</span><span class="p">)</span>
+
+  <span class="c1"># Class which holds universal trip information</span>
+  <span class="n">t</span> <span class="o">=</span> <span class="no">TripInfo</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="n">token</span><span class="p">,</span> <span class="n">from</span><span class="p">,</span> <span class="n">to</span><span class="p">,</span> <span class="n">dep_date</span><span class="p">,</span> <span class="n">ret_date</span><span class="p">,</span> <span class="n">is_ret</span><span class="p">)</span>
+
+  <span class="c1"># In this example, consider three alternate cities. Now we launch a Sidekiq worker for each alternate city, which all run simultaneously</span>
+  <span class="no">TripWorkerThread</span><span class="p">.</span><span class="nf">perform_async</span><span class="p">(</span><span class="n">t</span><span class="p">.</span><span class="nf">getToken</span><span class="p">(),</span> <span class="p">[.</span><span class="nf">.</span><span class="o">.</span><span class="p">],</span> <span class="s2">"CHI"</span><span class="p">)</span>
+  <span class="no">TripWorkerThread</span><span class="p">.</span><span class="nf">perform_async</span><span class="p">(</span><span class="n">t</span><span class="p">.</span><span class="nf">getToken</span><span class="p">(),</span> <span class="p">[.</span><span class="nf">.</span><span class="o">.</span><span class="p">],</span> <span class="s2">"NYC"</span><span class="p">)</span>
+  <span class="no">TripWorkerThread</span><span class="p">.</span><span class="nf">perform_async</span><span class="p">(</span><span class="n">t</span><span class="p">.</span><span class="nf">getToken</span><span class="p">(),</span> <span class="p">[.</span><span class="nf">.</span><span class="o">.</span><span class="p">],</span> <span class="s2">"BWI"</span><span class="p">)</span>
+  <span class="p">[.</span><span class="nf">.</span><span class="o">.</span><span class="p">]</span>
+</code></pre>
+  </p>
+
+  <hr class="hr-small">
+
+  <h3 class="project-h3">Project Status</h3>
+
+  <p>Bus-Fly-Go is still under development. Although the core product is functional, it is a continually evolving project.
+    <br><br>
+    <em>Bus-Fly-Go is kept in a private repository. Please contact me if you would like to learn more about the project.</em>
+  </p>
+
+<br>
+</div>
+
+<div class="footer-custom">
+
+  <div class="container">
+
+
+    <div class="footer-image">
+      <img src="images/about.jpg" alt="Kyle Justice" class="img-circle" height="68" width="68">
+    </div>
+    <div class="footer-content">
+      <h3 class="footer-header">Kyle Justice <span class="footer-grey"></span></h3>
+
+      <p class="footer-text hidden-xs hidden-sm">
+        <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp; kyle_justice@yahoo.com &nbsp; | &nbsp; <i class="fa fa-phone" aria-hidden="true"></i>&nbsp; +1 (614) 499-1825
+
+                    <span class="footer-text-small"><i class="fa fa-picture-o" aria-hidden="true"></i> by <a href="https://unsplash.com/@logan_gorman?photo=BTNCNey9E3k" target="_blank">Logan Gorman</a>
+</span>
+      </p>
+
+      <p class="footer-text hidden-md hidden-lg">
+        <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp; kyle_justice@yahoo.com <br> <i class="fa fa-phone" aria-hidden="true"></i>&nbsp; +1 (614) 499-1825
+      </p>
+
+    </div>
+
+  </div>
+
+
+</div>
+
+
+
+  </body>
+
+</html>

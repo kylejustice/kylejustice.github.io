@@ -1,0 +1,427 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Install + Run Bus-Fly-Go</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- Icon stylesheet -->
+    <!-- Font Awesome (http://fontawesome.io) -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Stateface (https://propublica.github.io/stateface) -->
+    <link rel="stylesheet" href="css/stateface.css">
+
+    <!-- Bootstrap stylesheet -->
+    <link rel="stylesheet" href="css/bootstrap-2.css">
+    <link rel="stylesheet" href="css/bootstrap-theme-2.css">
+
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- jQuery -->
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Font used for the website: Adobe Europa -->
+    <script src="https://use.typekit.net/mrf6non.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <!-- Syntax highlighter stylesheet -->
+    <!-- Rouge (http://rouge.jneen.net) -->
+    <link href="/css/rouge.css" rel="stylesheet" />
+
+  </head>
+
+  <body data-spy="scroll" data-target="#navbar-scroll">
+
+  <div class="leaderboard">
+  <h1 class="text-center">Bus-Fly-Go</h1>
+</div>
+
+<div class="container">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Install + Run</h3>
+    </div>
+
+    <div class="panel-body regular">
+
+      <div class="tight">
+        <p class="bfg-install"><em>Enclosed below are instructions to install and execute the Bus-Fly-Go program.
+        It is assumed that you have access to the 'busflygo.tar.gz' tarball and solid internet connection.</em></p>
+      </div>
+      <hr class="idea">
+
+      <h1>Install Bus-Fly-Go & Setup Environment</h1>
+
+      <hr>
+
+      <h3>1) Install Ubuntu 16.04 LTS</h3>
+      <p class="bfg-install">You will need to use an installation of Ubuntu Linux to run the application.
+      Older versions might work, but this manual was confirmed to work on Ubuntu Desktop 16.04 LTS.
+      Installing a fresh Ubuntu 16.04 on Oracle VM VirtualBox is a convenient option.
+      </p>
+
+      <hr>
+
+      <div class="alert alert-info" role="alert">
+        For these next steps, you will need to use the terminal command line in your Ubuntu installation.
+        Do NOT type the '$' [or characters before it] when executing a command.
+          The '$' only signals the start of a new command.
+        <br><br>
+        Copy, or type the following highlighted commands into the terminal, and follow along with the instructions.
+
+      </div>
+
+      <hr>
+
+      <h3>2) Install Git</h3>
+      <p class="bfg-install">
+      </p>
+      <code>
+        $ sudo apt-get install git
+      </code>
+
+      <hr>
+
+      <h3>3) Install Ruby Dependencies</h3>
+      <p class="bfg-install">
+      </p>
+
+      <code>
+        $ sudo apt-get install curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev
+      </code>
+
+      <hr>
+
+      <h3>4) Install ruby-build</h3>
+      <p class="bfg-install">
+
+      </p>
+
+      <code>
+        $ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+      </code>
+
+      <hr>
+
+      <h3>5) Install rbenv</h3>
+      <p class="bfg-install">
+
+      </p>
+
+      <code>
+        $ sudo apt install rbenv
+      </code>
+
+      <hr>
+
+      <h3>6) Install Ruby (takes a while)</h3>
+      <p class="bfg-install">
+
+      </p>
+
+      <code>
+        $ rbenv install 2.2.2
+      </code>
+
+      <hr>
+
+      <h3>7) Set global Ruby version</h3>
+      <p class="bfg-install">
+
+      </p>
+
+      <code>
+        $ rbenv global 2.2.2
+      </code>
+
+      <hr>
+
+      <h3>8) Install nodejs</h3>
+      <p class="bfg-install">
+
+      </p>
+
+      <code>
+        $ sudo apt-get install nodejs
+      </code>
+
+      <hr>
+
+      <h3>9) Install ruby-dev</h3>
+      <p class="bfg-install">
+
+      </p>
+
+      <code>
+        $ sudo apt-get install ruby-dev
+      </code>
+
+      <hr>
+
+      <h3>10) Install Rails (takes a while)</h3>
+      <p class="bfg-install">
+
+      </p>
+
+      <code>
+        $ sudo gem install --no-document rails -v 4.2.1
+      </code>
+
+      <hr>
+
+      <h3>11) Install redis</h3>
+      <p class="bfg-install">
+        Install redis with these four <strong>separate</strong> commands.
+        Also make sure to navigate back home with <em>$ cd</em>.
+      </p>
+
+      <code>
+        $ wget http://download.redis.io/redis-stable.tar.gz
+      </code>
+      <br>
+      <code>
+        $ tar xvzf redis-stable.tar.gz
+      </code>
+      <br>
+      <code>
+        $ cd redis-stable
+      </code>
+      <br>
+      <code>
+        $ make
+      </code>
+      <br>
+      <code>
+        $ cd
+      </code>
+
+      <hr>
+
+      <h3>12) Install redis-server</h3>
+      <p class="bfg-install">
+
+      </p>
+
+      <code>
+        $ sudo apt install redis-server
+      </code>
+
+      <hr>
+
+      <h3>13) Extract busflygo.tar.gz</h3>
+      <p class="bfg-install">
+        Download <em>busflygo.tar.gz</em> and place it in your home directory.
+        From your home directory, extract the application by executing:
+      </p>
+
+      <code>
+        $ tar -xvzf busflygo.tar.gz
+      </code>
+
+      <hr>
+
+      <h3>14) Navigate into the <em>busflygo</em> directory</h3>
+      <p class="bfg-install">
+
+      </p>
+
+      <code>
+        $ cd busflygo
+      </code>
+
+      <hr>
+
+      <h3>15) Run the <em>bundle install</em></h3>
+      <p class="bfg-install">
+
+      </p>
+
+      <code>
+        ~/busflygo$ bundle install
+      </code>
+
+      <hr>
+
+      <div class="alert alert-info" role="alert">
+        Okay, everything should now be installed. Let's run Bus-Fly-Go!
+
+      </div>
+
+      <hr class="idea">
+
+      <h1>Run Bus-Fly-Go</h1>
+
+      <hr>
+
+      <h3>1) Open up <strong>three</strong> separate terminals in Ubuntu</h3>
+      <p class="bfg-install">
+        To run Bus-Fly-Go 100%, three command terminals are required.
+        <br>
+        Navigate each of the three terminals to the <em>busflygo</em> folder. (<code>$ cd busflygo</code> x3)
+      </p>
+
+      <hr>
+
+      <h3>2) In <strong>one</strong> terminal, startup Rails</h3>
+      <p class="bfg-install">
+        Boot up Rails from <strong>one</strong> of the three terminals.
+      </p>
+
+      <code>
+        ~/busflygo$ rails s
+      </code>
+      <br>
+      <p></p>
+      <div class="alert alert-danger" role="alert">
+        <strong>IMPORTANT: </strong>During the first startup of Rails, <strong>WAIT</strong> for PhantomJS to finish installing.
+      </div>
+
+      <hr>
+
+      <h3>3) In <strong>one other</strong> terminal, startup redis-server</h3>
+      <p class="bfg-install">
+        Boot up redis-server from <strong>one</strong> of the other three terminals.
+      </p>
+
+      <code>
+        ~/busflygo$ redis-server
+      </code>
+
+      <hr>
+
+      <h3>4) In <strong>the third</strong> terminal, startup Sidekiq</h3>
+      <p class="bfg-install">
+        Boot up Sidekiq from the <strong>third</strong> untouched terminal.
+      </p>
+
+      <code>
+        ~/busflygo$ bundle exec sidekiq
+      </code>
+
+      <hr>
+
+      <h3>5) Open a web browser, and navigate to the application</h3>
+      <p class="bfg-install">
+        Open up a web browser in Ubuntu, and navigate to the locally hostel web application.
+        <br>
+        The default address should be <em><a href="http://localhost:3000">http://localhost:3000</a></em>
+        <br>
+        If, for some bizarre reason, the link doesn't work, look at the command terminal running Rails.
+        Rails will state which address the local website is running on.
+      </p>
+
+      <hr>
+
+      <div class="alert alert-success" role="alert">
+        Bus-Fly-Go should be fully functional and running!
+      </div>
+
+      <hr class="idea">
+
+      <h1>Bus-Fly-Go Demo Websites</h1>
+
+      <p>We have 10 sample runs of the application already generated.
+        Feel free to navigate to their pages by clicking any of the links below!
+        Alternatively, click "New Trip" at the top right of the page to create your own journey!
+      </p>
+
+      <hr>
+      <p>
+      <em>Please Note: All 10 demo searches have departure dates of 01/10/2017 and return dates of 01/19/2017.
+        Additionally, they all originate from Columbus, Ohio (CMH).</em>
+      </p>
+      <br>
+      <div class="list-group">
+
+
+            <a href="http://localhost:3000/trips/54353259f5e1ef81d1c7" class="list-group-item">
+              ATH: Athens, Greece
+            </a>
+
+
+
+
+            <a href="http://localhost:3000/trips/5cde8532ca91aca0be5a" class="list-group-item">
+              CPH: Copenhagen, Denmark
+            </a>
+
+
+
+
+            <a href="http://localhost:3000/trips/7f896d3611c0aa4ab97e" class="list-group-item">
+              DEL: New Delhi, India
+            </a>
+
+
+
+
+            <a href="http://localhost:3000/trips/eb01ea3df4c660677589" class="list-group-item">
+              HKG: Hong Kong, Hong Kong
+            </a>
+
+
+
+
+            <a href="http://localhost:3000/trips/7ac8ed4485142832c4e4" class="list-group-item">
+              JNB: Johannesburg, South Africa
+            </a>
+
+
+
+
+            <a href="http://localhost:3000/trips/8450f55074407679984c" class="list-group-item">
+              RIO: Rio de Janeiro, Brazil
+            </a>
+
+
+
+
+            <a href="http://localhost:3000/trips/c9439204e114f212cd00" class="list-group-item">
+              ROM: Rome, Italy
+            </a>
+
+
+
+
+            <a href="http://localhost:3000/trips/6ee5556c697355d9274d" class="list-group-item">
+              SAO: Sao Paulo, Brazil
+            </a>
+
+
+
+
+            <a href="http://localhost:3000/trips/1f2938305636d02333f5" class="list-group-item">
+              SIN: Singapore, Singapore
+            </a>
+
+
+
+
+            <a href="http://localhost:3000/trips/c1f394c1aa5ebb436abe" class="list-group-item">
+              SYD: Sydney, Australia
+            </a>
+
+
+      </div>
+
+    </div>
+
+</div>
+</div>
+
+  </body>
+
+</html>

@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Kyle Justice - Personal Website</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- Icon stylesheet -->
+    <!-- Font Awesome (http://fontawesome.io) -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Stateface (https://propublica.github.io/stateface) -->
+    <link rel="stylesheet" href="css/stateface.css">
+
+    <!-- Bootstrap stylesheet -->
+    <link rel="stylesheet" href="css/bootstrap-2.css">
+    <link rel="stylesheet" href="css/bootstrap-theme-2.css">
+
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- jQuery -->
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Font used for the website: Adobe Europa -->
+    <script src="https://use.typekit.net/mrf6non.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <!-- Syntax highlighter stylesheet -->
+    <!-- Rouge (http://rouge.jneen.net) -->
+    <link href="/css/rouge.css" rel="stylesheet" />
+
+  </head>
+
+  <body data-spy="scroll" data-target="#navbar-scroll">
+
+  <style type="text/css">
+    body {
+        padding-top: 59px;
+    }
+</style>
+
+<nav class="navbar navbar-default navbar-fixed-top change-color">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/index.html">Kyle Justice</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <div id="navbar-scroll">
+        <ul class="nav navbar-nav">
+          <li class=""><a href="#"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i> Top</a></li>
+        </ul>
+      </div>
+      <ul class="nav navbar-nav navbar-right nav-glyph">
+        <li><a href="https://www.linkedin.com/in/kyle-justice-67894024" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.github.com/timeout19" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+        <li><a href="http://www.facebook.com/kjustice" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="projects">
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="projects-header">Personal Website</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container projects-div">
+
+  <div class="row">
+    <div class="col-md-6">
+      <a href="/images/screen-personal.png"><img src="/images/screen-personal.png" class="img-responsive" alt="Responsive image"></a>
+    </div>
+    <div class="col-md-6">
+      <a href="/images/screen-personal-projects.png"><img src="/images/screen-personal-projects.png" class="img-responsive" alt="Responsive image"></a>
+    </div>
+  </div>
+
+  <hr class="hr-small">
+
+<h3>Technical Specifications</h3>
+
+<p><strong>Languages: </strong> CSS, HTML, JavaScript, Ruby (ERB)
+  <br>
+  <strong>Technologies: </strong> Bootstrap, jQuery, Middleman, Rouge, YAML
+</p>
+
+<hr class="hr-small">
+
+
+
+<p>
+  This personal website was constructed using Middleman, a framework used to build static websites.
+  Middleman is convenient since it is able to utilize Embedded Ruby (ERB) when building the website.
+  ERB is quite useful in rendering partials or looping through items, generating HTML code.
+
+  <br><br>
+
+  <b>Code Example: </b>When listing my languages in the Skills section, I am able to simply store what languages I know in a YAML data file (left).
+  I then reference this data file with ERB and loop over it, creating the HTML needed (right).
+
+  <br><br>
+
+<div class="row">
+  <div class="col-sm-6">
+<pre class="highlight ruby"><code>    <span class="c1"># languages.yml</span>
+
+    <span class="o">---</span>
+    <span class="o">-</span> <span class="ss">language: </span><span class="s2">"C"</span>
+    <span class="o">-</span> <span class="ss">language: </span><span class="s2">"C++"</span>
+    <span class="o">-</span> <span class="ss">language: </span><span class="s2">"CSS"</span>
+    <span class="o">-</span> <span class="ss">language: </span><span class="s2">"HTML"</span>
+    <span class="o">-</span> <span class="ss">language: </span><span class="s2">"Java"</span>
+    <span class="o">-</span> <span class="ss">language: </span><span class="s2">"JavaScript"</span>
+    <span class="o">-</span> <span class="ss">language: </span><span class="s2">"Ruby"</span>
+    <span class="o">-</span> <span class="ss">language: </span><span class="s2">"SQL"</span>
+</code></pre>  </div>
+  <div class="col-sm-6">
+<pre class="highlight ruby"><code>    <span class="c1"># _resume.html.erb</span>
+
+    <span class="o">&lt;</span><span class="n">h3</span><span class="o">&gt;</span><span class="no">Languages</span><span class="o">&lt;</span><span class="sr">/h3&gt;
+    &lt;p&gt;
+      &lt;.% i = 0 %&gt;
+      &lt;.% data.languages.each do |l| %&gt;
+      &lt;.% if(i &lt; data.languages.length-1) %&gt;
+      &lt;.%= l.language + ", " %&gt;
+      &lt;.% else %&gt;
+      &lt;.%= l.language %&gt;
+      &lt;.% end %&gt;
+      &lt;.% i += 1 %&gt;
+      &lt;.% end %&gt;
+    &lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
+</code></pre>  </div>
+</div>
+  <br>
+</div>
+
+<div class="footer-custom">
+
+  <div class="container">
+
+
+    <div class="footer-image">
+      <img src="images/about.jpg" alt="Kyle Justice" class="img-circle" height="68" width="68">
+    </div>
+    <div class="footer-content">
+      <h3 class="footer-header">Kyle Justice <span class="footer-grey"></span></h3>
+
+      <p class="footer-text hidden-xs hidden-sm">
+        <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp; kyle_justice@yahoo.com &nbsp; | &nbsp; <i class="fa fa-phone" aria-hidden="true"></i>&nbsp; +1 (614) 499-1825
+
+                    <span class="footer-text-small"><i class="fa fa-picture-o" aria-hidden="true"></i> by <a href="https://unsplash.com/@logan_gorman?photo=BTNCNey9E3k" target="_blank">Logan Gorman</a>
+</span>
+      </p>
+
+      <p class="footer-text hidden-md hidden-lg">
+        <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp; kyle_justice@yahoo.com <br> <i class="fa fa-phone" aria-hidden="true"></i>&nbsp; +1 (614) 499-1825
+      </p>
+
+    </div>
+
+  </div>
+
+
+</div>
+
+
+
+  </body>
+
+</html>
