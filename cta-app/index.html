@@ -1,1 +1,72 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>preact-app</title><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="manifest" href="/cta-app/manifest.json"><meta name="theme-color" content="#673ab8"><link rel="shortcut icon" href="/cta-app/favicon.ico"><link href="/cta-app/bundle.f0f3a.css" rel="stylesheet"></head><body><div id="app"><div class="ctaApp__1hx7o"><div class="ctaAppChild__6kqJ7"></div><div class="ctaAppChild__6kqJ7"></div><div class="ctaAppChild__6kqJ7"></div><div class="ctaAppChild__6kqJ7"></div><div class="ctaAppChild__6kqJ7"></div><div class="ctaAppChild__6kqJ7"></div></div></div><script type="__PREACT_CLI_DATA__">{"preRenderData":{"url":"/"}}</script><script nomodule="">!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()},!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script><script crossorigin="anonymous" src="/cta-app/bundle.2a5c6.esm.js" type="module"></script><script nomodule="" src="/cta-app/polyfills.76962.js"></script><script nomodule="" defer="defer" src="/cta-app/bundle.0787f.js"></script></body></html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+	<style>
+		body, html {
+			padding: 0;
+			margin: 0;
+		}
+		.password-container {
+			display: flex;
+			width: 100vw;
+			height: 100vh;
+			justify-content: center;
+			flex-direction: column;
+			max-width: 300px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.password-input {
+			margin-bottom: 0.5rem;
+		}
+		.password-btn {
+
+		}
+	</style>
+
+	<div class="password-container">
+		<input class="password-input" id="password" type="password" placeholder="Password" /> <br />
+		<button class="password-btn" id="loginbutton" type="button">Enter</button>
+	</div>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="https://rawcdn.githack.com/chrisveness/crypto/7067ee62f18c76dd4a9d372a00e647205460b62b/sha1.js"></script>
+
+	<script type="text/javascript">
+		"use strict";
+		function loadPage(pwd) {
+			var hash= pwd;
+			hash= Sha1.hash(pwd);
+			var url= hash + "/index.html";
+			$.ajax({
+				url : url,
+				dataType : "html",
+				success : function(data) {
+					window.location= url;
+				},
+				error : function(xhr, ajaxOptions, thrownError) {
+					parent.location.hash= hash;
+					$("#password").attr("placeholder","Incorrect password.");
+					$("#password").val("");
+				}
+			});
+		}
+		$("#loginbutton").on("click", function() {
+			loadPage($("#password").val());
+		});
+		$("#password").keypress(function(e) {
+			if (e.which == 13) {
+				loadPage($("#password").val());
+			}
+		});
+		$("#password").focus();
+	</script>
+
+</body>
+</html>
