@@ -1,6 +1,6 @@
 {
-  "name": "preact-app",
-  "short_name": "preact-app",
+  "name": "Justice CTA App",
+  "short_name": "cta-app",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
