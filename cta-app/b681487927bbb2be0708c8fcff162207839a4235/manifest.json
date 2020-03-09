@@ -1,7 +1,7 @@
 {
   "name": "Justice CTA App",
   "short_name": "cta-app",
-  "start_url": "/cta-app/b681487927bbb2be0708c8fcff162207839a4235/",
+  "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#fff",
