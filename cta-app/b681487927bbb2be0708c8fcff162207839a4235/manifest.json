@@ -1,11 +1,11 @@
 {
   "name": "Justice CTA App",
   "short_name": "cta-app",
-  "start_url": "/",
+  "start_url": "/cta-app/b681487927bbb2be0708c8fcff162207839a4235/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#fff",
-  "theme_color": "#673ab8",
+  "theme_color": "#B3DDF2",
   "icons": [
     {
       "src": "/assets/icons/android-chrome-192x192.png",
