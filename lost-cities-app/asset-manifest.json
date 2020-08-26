@@ -1,26 +1,23 @@
 {
   "files": {
-    "main.css": "/lost-cities-app/static/css/main.5f361e03.chunk.css",
-    "main.js": "/lost-cities-app/static/js/main.50078bc3.chunk.js",
-    "main.js.map": "/lost-cities-app/static/js/main.50078bc3.chunk.js.map",
+    "main.css": "/lost-cities-app/static/css/main.2542c815.chunk.css",
+    "main.js": "/lost-cities-app/static/js/main.6719ba1c.chunk.js",
+    "main.js.map": "/lost-cities-app/static/js/main.6719ba1c.chunk.js.map",
     "runtime-main.js": "/lost-cities-app/static/js/runtime-main.371e0f4d.js",
     "runtime-main.js.map": "/lost-cities-app/static/js/runtime-main.371e0f4d.js.map",
-    "static/css/2.0e4197fe.chunk.css": "/lost-cities-app/static/css/2.0e4197fe.chunk.css",
-    "static/js/2.b8919063.chunk.js": "/lost-cities-app/static/js/2.b8919063.chunk.js",
-    "static/js/2.b8919063.chunk.js.map": "/lost-cities-app/static/js/2.b8919063.chunk.js.map",
+    "static/js/2.18450e3c.chunk.js": "/lost-cities-app/static/js/2.18450e3c.chunk.js",
+    "static/js/2.18450e3c.chunk.js.map": "/lost-cities-app/static/js/2.18450e3c.chunk.js.map",
     "index.html": "/lost-cities-app/index.html",
-    "precache-manifest.00f4e5e9075f10220d7ed98abcf9b258.js": "/lost-cities-app/precache-manifest.00f4e5e9075f10220d7ed98abcf9b258.js",
+    "precache-manifest.3b2727dbdc0c6b80273269b9f59fb79f.js": "/lost-cities-app/precache-manifest.3b2727dbdc0c6b80273269b9f59fb79f.js",
     "service-worker.js": "/lost-cities-app/service-worker.js",
-    "static/css/2.0e4197fe.chunk.css.map": "/lost-cities-app/static/css/2.0e4197fe.chunk.css.map",
-    "static/css/main.5f361e03.chunk.css.map": "/lost-cities-app/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.b8919063.chunk.js.LICENSE.txt": "/lost-cities-app/static/js/2.b8919063.chunk.js.LICENSE.txt",
+    "static/css/main.2542c815.chunk.css.map": "/lost-cities-app/static/css/main.2542c815.chunk.css.map",
+    "static/js/2.18450e3c.chunk.js.LICENSE.txt": "/lost-cities-app/static/js/2.18450e3c.chunk.js.LICENSE.txt",
     "static/media/logo.svg": "/lost-cities-app/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.371e0f4d.js",
-    "static/css/2.0e4197fe.chunk.css",
-    "static/js/2.b8919063.chunk.js",
-    "static/css/main.5f361e03.chunk.css",
-    "static/js/main.50078bc3.chunk.js"
+    "static/js/2.18450e3c.chunk.js",
+    "static/css/main.2542c815.chunk.css",
+    "static/js/main.6719ba1c.chunk.js"
   ]
 }
