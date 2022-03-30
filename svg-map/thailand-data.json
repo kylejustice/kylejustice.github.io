@@ -1,0 +1,464 @@
+{
+	"TH77": {
+		"name": "Amnat Charoen",
+		"nameThai": "อำนาจเจริญ",
+		"population": 378438,
+		"populationDensity": 115
+	},
+	"TH35": {
+		"name": "Ang Thong",
+		"nameThai": "อ่างทอง",
+		"population": 279654,
+		"populationDensity": 294
+	},
+	"TH40": {
+		"name": "Bangkok",
+		"nameThai": "กรุงเทพมหานคร",
+		"population": 5666264,
+		"populationDensity": 3623
+	},
+	"TH81": {
+		"name": "Bueng Kan",
+		"nameThai": "บึงกาฬ",
+		"population": 424091,
+		"populationDensity": 106
+	},
+	"TH28": {
+		"name": "Buriram",
+		"nameThai": "บุรีรัมย์",
+		"population": 1595747,
+		"populationDensity": 159
+	},
+	"TH44": {
+		"name": "Chachoengsao",
+		"nameThai": "ฉะเชิงเทรา",
+		"population": 720113,
+		"populationDensity": 139
+	},
+	"TH32": {
+		"name": "Chai Nat",
+		"nameThai": "ชัยนาท",
+		"population": 326611,
+		"populationDensity": 131
+	},
+	"TH26": {
+		"name": "Chaiyaphum",
+		"nameThai": "ชัยภูมิ",
+		"population": 1137357,
+		"populationDensity": 91
+	},
+	"TH48": {
+		"name": "Chanthaburi",
+		"nameThai": "จันทบุรี",
+		"population": 537698,
+		"populationDensity": 84
+	},
+	"TH02": {
+		"name": "Chiang Mai",
+		"nameThai": "เชียงใหม่",
+		"population": 1779254,
+		"populationDensity": 79
+	},
+	"TH03": {
+		"name": "Chiang Rai",
+		"nameThai": "เชียงราย",
+		"population": 1298304,
+		"populationDensity": 113
+	},
+	"TH46": {
+		"name": "Chonburi",
+		"nameThai": "ชลบุรี",
+		"population": 1558301,
+		"populationDensity": 346
+	},
+	"TH58": {
+		"name": "Chumphon",
+		"nameThai": "ชุมพร",
+		"population": 511304,
+		"populationDensity": 85
+	},
+	"TH23": {
+		"name": "Kalasin",
+		"nameThai": "กาฬสินธุ์",
+		"population": 983418,
+		"populationDensity": 142
+	},
+	"TH11": {
+		"name": "Kamphaeng Phet",
+		"nameThai": "กำแพงเพชร",
+		"population": 725867,
+		"populationDensity": 86
+	},
+	"TH50": {
+		"name": "Kanchanaburi",
+		"nameThai": "กาญจนบุรี",
+		"population": 895525,
+		"populationDensity": 46
+	},
+	"TH22": {
+		"name": "Khon Kaen",
+		"nameThai": "ขอนแก่น",
+		"population": 1802872,
+		"populationDensity": 169
+	},
+	"TH63": {
+		"name": "Krabi",
+		"nameThai": "กระบี่",
+		"population": 476739,
+		"populationDensity": 90
+	},
+	"TH06": {
+		"name": "Lampang",
+		"nameThai": "ลำปาง",
+		"population": 738316,
+		"populationDensity": 59
+	},
+	"TH05": {
+		"name": "Lamphun",
+		"nameThai": "ลำพูน",
+		"population": 405075,
+		"populationDensity": 92
+	},
+	"TH18": {
+		"name": "Loei",
+		"nameThai": "เลย",
+		"population": 642950,
+		"populationDensity": 61
+	},
+	"TH34": {
+		"name": "Lopburi",
+		"nameThai": "ลพบุรี",
+		"population": 755556,
+		"populationDensity": 116
+	},
+	"TH01": {
+		"name": "Mae Hong Son",
+		"nameThai": "แม่ฮ่องสอน",
+		"population": 284138,
+		"populationDensity": 23
+	},
+	"TH24": {
+		"name": "Maha Sarakham",
+		"nameThai": "มหาสารคาม",
+		"population": 962665,
+		"populationDensity": 172
+	},
+	"TH78": {
+		"name": "Mukdahan",
+		"nameThai": "มุกดาหาร",
+		"population": 353174,
+		"populationDensity": 87
+	},
+	"TH43": {
+		"name": "Nakhon Nayok",
+		"nameThai": "นครนายก",
+		"population": 260751,
+		"populationDensity": 122
+	},
+	"TH53": {
+		"name": "Nakhon Pathom",
+		"nameThai": "นครปฐม",
+		"population": 920030,
+		"populationDensity": 430
+	},
+	"TH73": {
+		"name": "Nakhon Phanom",
+		"nameThai": "นครพนม",
+		"population": 719136,
+		"populationDensity": 127
+	},
+	"TH27": {
+		"name": "Nakhon Ratchasima",
+		"nameThai": "นครราชสีมา",
+		"population": 2648927,
+		"populationDensity": 128
+	},
+	"TH16": {
+		"name": "Nakhon Sawan",
+		"nameThai": "นครสวรรค์",
+		"population": 1059887,
+		"populationDensity": 111
+	},
+	"TH64": {
+		"name": "Nakhon Si Thammarat",
+		"nameThai": "นครศรีธรรมราช",
+		"population": 1561927,
+		"populationDensity": 158
+	},
+	"TH04": {
+		"name": "Nan",
+		"nameThai": "น่าน",
+		"population": 478227,
+		"populationDensity": 40
+	},
+	"TH31": {
+		"name": "Narathiwat",
+		"nameThai": "นราธิวาส",
+		"population": 808020,
+		"populationDensity": 180
+	},
+	"TH79": {
+		"name": "Nong Bua Lam Phu",
+		"nameThai": "หนองบัวลำภู",
+		"population": 512780,
+		"populationDensity": 125
+	},
+	"TH17": {
+		"name": "Nong Khai",
+		"nameThai": "หนองคาย",
+		"population": 522311,
+		"populationDensity": 160
+	},
+	"TH38": {
+		"name": "Nonthaburi",
+		"nameThai": "นนทบุรี",
+		"population": 1265387,
+		"populationDensity": 1986
+	},
+	"TH39": {
+		"name": "Pathum Thani",
+		"nameThai": "ปทุมธานี",
+		"population": 1163604,
+		"populationDensity": 766
+	},
+	"TH69": {
+		"name": "Pattani",
+		"nameThai": "ปัตตานี",
+		"population": 725104,
+		"populationDensity": 367
+	},
+	"TH61": {
+		"name": "Phang Nga",
+		"nameThai": "พังงา",
+		"population": 268788,
+		"populationDensity": 49
+	},
+	"TH66": {
+		"name": "Phatthalung",
+		"nameThai": "พัทลุง",
+		"population": 524865,
+		"populationDensity": 135
+	},
+	"TH41": {
+		"name": "Phayao",
+		"nameThai": "พะเยา",
+		"population": 472356,
+		"populationDensity": 76
+	},
+	"TH14": {
+		"name": "Phetchabun",
+		"nameThai": "เพชรบูรณ์",
+		"population": 992451,
+		"populationDensity": 80
+	},
+	"TH56": {
+		"name": "Phetchaburi",
+		"nameThai": "เพชรบุรี",
+		"population": 485191,
+		"populationDensity": 77
+	},
+	"TH13": {
+		"name": "Phichit",
+		"nameThai": "พิจิตร",
+		"population": 536311,
+		"populationDensity": 124
+	},
+	"TH12": {
+		"name": "Phitsanulok",
+		"nameThai": "พิษณุโลก",
+		"population": 865247,
+		"populationDensity": 82
+	},
+	"TH36": {
+		"name": "Phra Nakhon Si Ayutthaya",
+		"nameThai": "พระนครศรีอยุธยา",
+		"population": 820188,
+		"populationDensity": 322
+	},
+	"TH07": {
+		"name": "Phrae",
+		"nameThai": "แพร่",
+		"population": 441726,
+		"populationDensity": 68
+	},
+	"TH62": {
+		"name": "Phuket",
+		"nameThai": "ภูเก็ต",
+		"population": 416582,
+		"populationDensity": 762
+	},
+	"TH74": {
+		"name": "Prachinburi",
+		"nameThai": "ปราจีนบุรี",
+		"population": 494680,
+		"populationDensity": 99
+	},
+	"TH57": {
+		"name": "Prachuap Khiri Khan",
+		"nameThai": "ประจวบคีรีขันธ์",
+		"population": 554116,
+		"populationDensity": 88
+	},
+	"TH59": {
+		"name": "Ranong",
+		"nameThai": "ระนอง",
+		"population": 193370,
+		"populationDensity": 60
+	},
+	"TH52": {
+		"name": "Ratchaburi",
+		"nameThai": "ราชบุรี",
+		"population": 873101,
+		"populationDensity": 168
+	},
+	"TH47": {
+		"name": "Rayong",
+		"nameThai": "ระยอง",
+		"population": 734753,
+		"populationDensity": 201
+	},
+	"TH25": {
+		"name": "Roi Et",
+		"nameThai": "ร้อยเอ็ด",
+		"population": 1305211,
+		"populationDensity": 166
+	},
+	"TH80": {
+		"name": "Sa Kaeo",
+		"nameThai": "สระแก้ว",
+		"population": 566303,
+		"populationDensity": 83
+	},
+	"TH20": {
+		"name": "Sakon Nakhon",
+		"nameThai": "สกลนคร",
+		"population": 1153390,
+		"populationDensity": 121
+	},
+	"TH42": {
+		"name": "Samut Prakan",
+		"nameThai": "สมุทรปราการ",
+		"population": 1344875,
+		"populationDensity": 1420
+	},
+	"TH55": {
+		"name": "Samut Sakhon",
+		"nameThai": "สมุทรสาคร",
+		"population": 584703,
+		"populationDensity": 675
+	},
+	"TH54": {
+		"name": "Samut Songkhram",
+		"nameThai": "สมุทรสงคราม",
+		"population": 193305,
+		"populationDensity": 467
+	},
+	"TH37": {
+		"name": "Saraburi",
+		"nameThai": "สระบุรี",
+		"population": 645911,
+		"populationDensity": 185
+	},
+	"TH67": {
+		"name": "Satun",
+		"nameThai": "สตูล",
+		"population": 323586,
+		"populationDensity": 107
+	},
+	"TH33": {
+		"name": "Sing Buri",
+		"nameThai": "สิงห์บุรี",
+		"population": 208446,
+		"populationDensity": 255
+	},
+	"TH30": {
+		"name": "Sisaket",
+		"nameThai": "ศรีสะเกษ",
+		"population": 1472859,
+		"populationDensity": 165
+	},
+	"TH68": {
+		"name": "Songkhla",
+		"nameThai": "สงขลา",
+		"population": 1435968,
+		"populationDensity": 186
+	},
+	"TH09": {
+		"name": "Sukhothai",
+		"nameThai": "สุโขทัย",
+		"population": 595072,
+		"populationDensity": 89
+	},
+	"TH51": {
+		"name": "Suphan Buri",
+		"nameThai": "สุพรรณบุรี",
+		"population": 846334,
+		"populationDensity": 156
+	},
+	"TH60": {
+		"name": "Surat Thani",
+		"nameThai": "สุราษฎร์ธานี",
+		"population": 1068010,
+		"populationDensity": 81
+	},
+	"TH29": {
+		"name": "Surin",
+		"nameThai": "สุรินทร์",
+		"population": 1396831,
+		"populationDensity": 157
+	},
+	"TH08": {
+		"name": "Tak",
+		"nameThai": "ตาก",
+		"population": 665620,
+		"populationDensity": 39
+	},
+	"TH65": {
+		"name": "Trang",
+		"nameThai": "ตรัง",
+		"population": 643164,
+		"populationDensity": 136
+	},
+	"TH49": {
+		"name": "Trat",
+		"nameThai": "ตราด",
+		"population": 229958,
+		"populationDensity": 78
+	},
+	"TH75": {
+		"name": "Ubon Ratchathani",
+		"nameThai": "อุบลราชธานี",
+		"population": 1878146,
+		"populationDensity": 120
+	},
+	"TH76": {
+		"name": "Udon Thani",
+		"nameThai": "อุดรธานี",
+		"population": 1586646,
+		"populationDensity": 143
+	},
+	"TH15": {
+		"name": "Uthai Thani",
+		"nameThai": "อุทัยธานี",
+		"population": 328618,
+		"populationDensity": 50
+	},
+	"TH10": {
+		"name": "Uttaradit",
+		"nameThai": "อุตรดิตถ์",
+		"population": 453103,
+		"populationDensity": 58
+	},
+	"TH70": {
+		"name": "Yala",
+		"nameThai": "ยะลา",
+		"population": 536330,
+		"populationDensity": 119
+	},
+	"TH72": {
+		"name": "Yasothon",
+		"nameThai": "ยโสธร",
+		"population": 537299,
+		"populationDensity": 130
+	}
+}
